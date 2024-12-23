@@ -1,0 +1,20 @@
+
+	 1) WebDriver driver1 =new FirefoxDriver();
+	   driver1.get("https://www.google.com/");
+	   driver1.manage().window().maximize();
+	
+	   
+	2) WebDriver driver2 =new ChromeDriver();
+	   driver2.get("https://www.demoblaze.com/");
+	   driver2.manage().window().maximize();
+	WebElement string=  driver2.findElement(By.xpath("//a[normalize-space()='PRODUCT STORE']"));
+	System.out.println(string.getText());
+	   //driver2.quit();
+	   
+3) WebDriver driver3 = new ChromeDriver();
+	   driver3.get("https://www.wikipedia.org/");
+	   driver3.manage().window().maximize();
+	   driver3.findElement(By.id("searchInput")).sendKeys("artificial intelligence");
+	   driver3.findElement(By.xpath("//i[@class='sprite svg-search-icon']")).click();
+	  // driver3.quit();
+	   
